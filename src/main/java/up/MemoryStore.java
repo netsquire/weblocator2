@@ -1,6 +1,8 @@
 package up;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 public class MemoryStore implements Holdable {
@@ -21,14 +23,16 @@ public class MemoryStore implements Holdable {
 	}
 	
 	@Override
-	public String list(){
-		StringBuffer sb = new StringBuffer();
+	public Map<String, String> list(){
+		/*
+		List<String> ls = new LinkedList<>();
 		for(String key : locations.keySet()) {
 			//System.out.println("key: " + key);
 			sb.append(locations.get(key)).append(":").append(locations.get(key));
 			}
-		System.out.println(sb.toString());
-		return sb.toString();
+		*/
+		//System.out.println(sb.toString());
+		return locations;
 	}
 
 	@Override

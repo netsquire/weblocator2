@@ -1,5 +1,7 @@
 package up;
 
+import java.util.Map;
+
 public interface Holdable {
 
 	/**
@@ -19,7 +21,7 @@ public interface Holdable {
 	 * 
 	 * @return
 	 */
-	String list();
+	public Map<String, String> list();
 
 	/**
 	 * 
